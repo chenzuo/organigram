@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Qi.Data</id>
+    <version>1.0.11</version>
+    <authors>DevDigital</authors>
+    <owners>DevDigital</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides common data access for .NET applications.</description>
+    <copyright>2013</copyright>
+  </metadata>
+</package>
