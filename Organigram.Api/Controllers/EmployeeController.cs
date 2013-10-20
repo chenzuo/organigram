@@ -1,4 +1,4 @@
-﻿namespace Organigram.Api
+﻿namespace Organigram.Api.Controllers
 {
     using System.Collections.Generic;
     using System.Linq;
