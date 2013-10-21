@@ -1,35 +1,29 @@
 ﻿namespace Organigram.Specs
 {
-    using System.Net.Http;
-
-    using Organigram.Api;
-
     using Xunit;
-
-    using HttpClientFactory = Organigram.Specs.LibraryCandidates.HttpClientFactory;
-
-    public static class OrganigramHttpClientFactory
-    {
-        public static HttpClient Create()
-        {
-            return HttpClientFactory.Create(
-                "http://localhost:9876", 
-                c => new Bootstrap().Configure(c));
-        }
-    }
 
     public class OrganigramApisTests
     {
         [Fact]
-        public void OrganigramsApi_GetRequest_ReturnsSuccessStatusCode()
+        public void OrganigramsApi_GetOrganigramsAuthenticated_ReturnsSuccessStatusCode()
         {
-            using (var client = OrganigramHttpClientFactory.Create())
+            using (var organigramApi = new OrganigramApiTester(true))
             {
-                var response = client.GetAsync("/organigrams").Result;
+                var response = organigramApi.Client.GetAsync("/organigrams").Result;
 
                 Assert.True(
                     response.IsSuccessStatusCode,
                     "Actual status code: " + response.StatusCode);
+            }
+        }
+
+        [Fact]
+        public void OrganigramsApi_GetOrganigramsUnauthenticated_ReturnsUnauthorizedStatusCode()
+        {
+            using (var organigramApi = new OrganigramApiTester(false))
+            {
+                var response = organigramApi.Client.GetAsync("/organigrams").Result;
+                Assert.Equal(401, (int)response.StatusCode);                    
             }
         }
     }

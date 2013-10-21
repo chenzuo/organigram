@@ -1,9 +1,8 @@
-﻿using System;
-using TechTalk.SpecFlow;
-
-namespace Organigram.Specs
+﻿namespace Organigram.Specs
 {
     using System.Net.Http;
+
+    using TechTalk.SpecFlow;
 
     using Xunit;
 
@@ -19,20 +18,26 @@ namespace Organigram.Specs
         {
             this.authenticated = false;
         }
+
+        [Given(@"I am authenticated")]
+        public void GivenIAmAuthenticated()
+        {
+            this.authenticated = true;
+        }
         
         [Given(@"I perform a (.*) request on (.*)")]
         public void GivenIPerformAGETRequestOnOrganigrams(string httpMethod, string urlPath)
         {
-            using (var client = OrganigramHttpClientFactory.Create())
+            using (var organigramApi = new OrganigramApiTester(this.authenticated))
             {
-                this.response = client.GetAsync(urlPath).Result;
+                this.response = organigramApi.Client.GetAsync(urlPath).Result;
             }
         }
         
         [Then(@"the response status code should be (.*)")]
-        public void ThenTheResponseStatusCodeShouldBeNotAuthorized(int p0)
+        public void ThenTheResponseStatusCodeShouldBeNotAuthorized(int responseStatusCode)
         {
-            Assert.Equal(p0, (int)this.response.StatusCode);
+            Assert.Equal(responseStatusCode, (int)this.response.StatusCode);
         }
     }
 }
