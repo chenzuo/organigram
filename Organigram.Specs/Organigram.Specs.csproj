@@ -72,10 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LibraryCandidates\ApiTester.cs" />
-    <Compile Include="OrganigramApiTester.cs" />
-    <Compile Include="OrganigramsAPISteps.cs" />
-    <Compile Include="OrganigramTests.cs" />
-    <Compile Include="Organigrams.feature.cs">
+    <Compile Include="Helpers\OrganigramApiTester.cs" />
+    <Compile Include="Steps\OrganigramsApiSteps.cs" />
+    <Compile Include="Tests\OrganigramTests.cs" />
+    <Compile Include="Features\Organigrams.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Organigrams.feature</DependentUpon>
@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Organigrams.feature">
+    <None Include="Features\Organigrams.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Organigrams.feature.cs</LastGenOutput>
     </None>

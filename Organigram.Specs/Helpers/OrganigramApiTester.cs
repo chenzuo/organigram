@@ -1,4 +1,4 @@
-﻿namespace Organigram.Specs
+﻿namespace Organigram.Specs.Helpers
 {
     using System.Web.Http;
 

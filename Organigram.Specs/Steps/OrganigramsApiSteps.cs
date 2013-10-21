@@ -1,13 +1,15 @@
-﻿namespace Organigram.Specs
+﻿namespace Organigram.Specs.Steps
 {
     using System.Net.Http;
+
+    using Organigram.Specs.Helpers;
 
     using TechTalk.SpecFlow;
 
     using Xunit;
 
     [Binding]
-    public class OrganigramsAPISteps
+    public class OrganigramsApiSteps
     {
         private bool authenticated;
 

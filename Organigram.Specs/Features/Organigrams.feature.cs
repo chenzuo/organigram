@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Organigram.Specs
+namespace Organigram.Specs.Features
 {
     using TechTalk.SpecFlow;
     

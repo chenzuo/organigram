@@ -1,5 +1,7 @@
-﻿namespace Organigram.Specs
+﻿namespace Organigram.Specs.Tests
 {
+    using Organigram.Specs.Helpers;
+
     using Xunit;
 
     public class OrganigramApisTests
