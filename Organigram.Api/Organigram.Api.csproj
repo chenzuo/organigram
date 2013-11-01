@@ -40,6 +40,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -49,6 +52,12 @@
     </Reference>
     <Reference Include="Qi.Data.Contracts">
       <HintPath>..\packages\Qi.Data.1.0.11\lib\Qi.Data.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleAuth">
+      <HintPath>..\packages\SimpleAuth.1.0.1\lib\SimpleAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleAuth.WebApi">
+      <HintPath>..\packages\SimpleAuth.WebApi.1.0.2\lib\SimpleAuth.WebApi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,9 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiModels\Organigram.cs" />
+    <Compile Include="Attributes\OrganigramAuth.cs" />
     <Compile Include="Bootstrap.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\OrganigramsController.cs" />
+    <Compile Include="OrganigramPermissionsResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
