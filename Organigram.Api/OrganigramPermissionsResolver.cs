@@ -10,7 +10,7 @@
     {
         public IEnumerable<OrganigramPermission> GetPermissions(string name)
         {
-            return new List<OrganigramPermission> { OrganigramPermission.None };
+            return new List<OrganigramPermission> { OrganigramPermission.OrganigramsView };
         }
     }
 }

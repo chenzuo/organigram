@@ -28,7 +28,7 @@
         }
         
         [Given(@"I perform a (.*) request on (.*)")]
-        public void GivenIPerformAGETRequestOnOrganigrams(string httpMethod, string urlPath)
+        public void GivenIPerformARequest(string httpMethod, string urlPath)
         {
             using (var organigramApi = new OrganigramApiTester(this.authenticated))
             {
@@ -37,7 +37,7 @@
         }
         
         [Then(@"the response status code should be (.*)")]
-        public void ThenTheResponseStatusCodeShouldBeNotAuthorized(int responseStatusCode)
+        public void ThenTheResponseStatusCodeShouldBe(int responseStatusCode)
         {
             Assert.Equal(responseStatusCode, (int)this.response.StatusCode);
         }
