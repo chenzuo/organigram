@@ -8,7 +8,7 @@
         {
             this.Get["/"] = _ =>
                 {
-                    var model = new { title = "Hello World!!" };
+                    var model = new { UserName = this.Context.CurrentUser.UserName };
                     return View["home", model];
                 };            
         }

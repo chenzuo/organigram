@@ -5,3 +5,5 @@ Organigram Roadmap
 - Build Organigrams page which performs GET request on Organigrams WebAPI and displays a list of organigrams
 - Add Cassette (http://getcassette.net/) for bundling, minification, LESS compilation and TypeScript
 - Add ASP.NET Identity implementation
+- Add Google/Facebook/Forms authentication options
+- Add installer and Windows service to host the application
