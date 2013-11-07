@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="/">Organigram</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,8 +74,11 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-    <div class="container">
+    
+    <div id="applicationHost">        
+    </div>
+       
+    @*<div class="container">
         <div class="starter-template">
             <h1>Bootstrap starter template</h1>
             <p class="lead">
@@ -83,11 +86,19 @@
                 All you get is this text and a mostly barebones HTML document.
             </p>
         </div>
-    </div>
+    </div>*@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    @*<script src="https://code.jquery.com/jquery.js"></script>*@
+        
+    <script type="text/javascript" src="/Scripts/jquery-1.9.1.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+   
+    <script src="/Scripts/knockout-2.3.0.js"></script>
+    
+    <script type="text/javascript" src="/Scripts/require.js" data-main="/App/main"></script>
+           
 </body>
 </html>

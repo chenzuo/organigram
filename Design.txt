@@ -1,0 +1,19 @@
+Organigram Design
+=================
+
+- Forms, Windows, and OpenID authentication
+- Claims based authorization
+- xUnit, AutoFixture, and Moq for unit tests
+- WebAPI for RESTful API (http://www.asp.net/web-api)
+- SpecFlow for acceptance tests (http://www.specflow.org/)
+- Selenium for UI testing (http://www.seleniumhq.org/)
+- OWIN and Katana hosting and pipeline (http://www.asp.net/vnext/overview/owin-and-katana)
+- Bootstrap for responsive UI design (http://getbootstrap.com/)
+- LESS for managing styles (http://lesscss.org/)
+- TypeScript for client side scripting (http://www.typescriptlang.org)
+- Durandel for managing a single page application (http://durandaljs.com/)
+- Entity Framework 6 Code First to manage migrations
+- Advanced Installer to manage installation (http://www.advancedinstaller.com/)
+- Validation?
+- Business entities?
+- Repository/Unit of work? Persistence in general
