@@ -31,6 +31,8 @@
 
         private void ConfigureRoutes()
         {
+            this.MapHttpAttributeRoutes();
+
             this.Routes.MapHttpRoute(
                name: "API Default",
                routeTemplate: "api/{controller}/{id}",
