@@ -12,7 +12,7 @@ Organigram Design
 - LESS for managing styles (http://lesscss.org/)
 - TypeScript for client side scripting (http://www.typescriptlang.org)
 - Durandel for managing a single page application (http://durandaljs.com/)
-- Entity Framework 6 Code First to manage migrations
+- Entity Framework 6 Code First to manage persistence and migrations
 - Advanced Installer to manage installation (http://www.advancedinstaller.com/)
 - Validation?
 - Business entities?
