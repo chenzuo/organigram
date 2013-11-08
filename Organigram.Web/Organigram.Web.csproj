@@ -186,8 +186,6 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\Durandal\Index.cshtml" />
-    <Content Include="Views\Durandal\_splash.cshtml" />
     <None Include="Views\home.cshtml" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
@@ -199,10 +197,12 @@
   <ItemGroup>
     <Compile Include="App_Start\DurandalBundleConfig.cs" />
     <Compile Include="App_Start\DurandalConfig.cs" />
-    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="OrganigramBootstrapper.cs" />
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Authentication\WindowsUserIdentity.cs" />
+    <Compile Include="Authentication\SystemWebWindowsAuthentication.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
