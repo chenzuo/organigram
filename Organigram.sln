@@ -14,13 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBA16C
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organigram.Web", "Organigram.Web\Organigram.Web.csproj", "{D7A522BA-3BF8-4C72-8A5D-0DF8109EF317}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{F50370C2-9102-4E98-A284-6733EFABBE4F}"
 	ProjectSection(SolutionItems) = preProject
 		Design.txt = Design.txt
 		Roadmap.txt = Roadmap.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organigram.Web", "Organigram.Web\Organigram.Web.csproj", "{D7A522BA-3BF8-4C72-8A5D-0DF8109EF317}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
