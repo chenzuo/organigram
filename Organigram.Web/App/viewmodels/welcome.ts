@@ -2,10 +2,10 @@
 /// <reference path="../../Scripts/typings/knockout/knockout.d.ts" />
 
 export class WelcomeViewModel {    
-    public title: KnockoutObservable<string> = ko.observable('hello freddy');
+    public title: KnockoutObservable<string> = ko.observable('hello');
  
     public activate() {
-        alert('welcome activated');
+        alert('welcome activated');        
         return true;
     }
 }

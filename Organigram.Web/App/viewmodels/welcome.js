@@ -1,7 +1,7 @@
 define(["require", "exports"], function(require, exports) {
     var WelcomeViewModel = (function () {
         function WelcomeViewModel() {
-            this.title = ko.observable('hello freddy');
+            this.title = ko.observable('hello');
         }
         WelcomeViewModel.prototype.activate = function () {
             alert('welcome activated');

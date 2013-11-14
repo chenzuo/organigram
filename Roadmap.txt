@@ -1,9 +1,9 @@
 Organigram Roadmap
 ==================
 
-- Build static text welcome page using TypeScript
-- Rebuild shell using best TypeScript approach
 - Build Organigrams (durandal) page which performs GET request on Organigrams WebAPI and displays a list of organigrams
+- Convert main.js to TypeScript
+- Rebuild Bootstrap navigation using Durandal router details
 - Add Cassette (http://getcassette.net/) for bundling, minification, LESS compilation and TypeScript
 
 - Add ASP.NET Identity implementation
@@ -14,3 +14,5 @@ Complete
 --------
 
 - Add TypeScript
+- Build static text welcome page using TypeScript
+- Rebuild shell using best TypeScript approach
