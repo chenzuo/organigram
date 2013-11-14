@@ -127,9 +127,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\main.js" />
-    <Content Include="App\viewmodels\flickr.js" />
+    <Content Include="App\viewmodels\flickr-old.js" />
     <Content Include="App\viewmodels\shell.js" />
     <TypeScriptCompile Include="App\viewmodels\welcome.ts" />
+    <TypeScriptCompile Include="App\viewmodels\shell-new.ts" />
     <Content Include="App\viewmodels\welcome-old.js" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr.html" />
@@ -179,6 +180,8 @@
     <Content Include="Scripts\durandal\transitions\entrance.js" />
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
+    <Content Include="Scripts\typings\durandal\durandal-1.x.d.ts" />
+    <Content Include="Scripts\typings\durandal\durandal.d.ts" />
     <Content Include="Scripts\typings\jquery\jquery.d.ts" />
     <Content Include="Scripts\typings\knockout\knockout.amd.d.ts" />
     <Content Include="Scripts\typings\knockout\knockout.d.ts" />
